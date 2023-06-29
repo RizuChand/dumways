@@ -75,21 +75,19 @@ nav a {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    margin: 20px;
+    margin: 50px;
     flex: 1.3;
 
-    
-
-    /* border: 1px solid black; */
 }
 
 .text{
     font-size: 20px;
-    margin: 50px;
     letter-spacing: 2px;
+    text-align: justify;
 }
 .title{
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contact {
@@ -107,7 +105,6 @@ nav a {
     width: 130px;
     border-radius: 50px;
     cursor: pointer;
-
 }
 
 
@@ -136,12 +133,11 @@ svg {
 }
 
 .wrapper-card {
-    /* border: 1px solid black; */
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px;
+    /* margin: 30px; */
     
     
 }
@@ -156,8 +152,8 @@ svg {
 }
 .picture {
     border-radius: 10px 10px 0px 0px;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     
 }
 .wrapper-profile {

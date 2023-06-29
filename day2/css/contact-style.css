@@ -59,18 +59,17 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: 100vh;
     background-color: #DCE0E4;
+    
 }
 .wrapper {
     height: 70%;
     font-weight: bold;
-
 }
 
 .wrapper h1 {
     text-align: center;
-    margin: 40px;
 }
 
 form {
