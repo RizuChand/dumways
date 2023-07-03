@@ -57,94 +57,73 @@ nav a {
     text-decoration: none;
 }
 
-.jumbotron {
-    height: 90vh;
-    margin: 40px;
-
-    display: grid;
-
-    grid-template-areas: "title title"
-                            "gambar duration"
-                            "gambar teknologi"
-                            "artikel artikel";
-
-    grid-template-columns: 1.3fr 1fr;
-
-    grid-template-rows: 1fr 2fr 3fr;
-
-}
-
-.jumbotron h1 {
-    grid-area: title;
-    background-color: #F1F0F0;
-    text-align: center;
-}
-
-.picture {
-    grid-area: gambar;
-    background-color: #F1F0F0;
+.container {
     display: flex;
     justify-content: center;
+    height: 100vh;
+    background-color: aquamarine;
 }
 
-.picture img {
-    width: 100%;
-    margin: 20px;
-    object-fit: contain;
-}
-
-.duration {
-    grid-area: duration;
-    background-color: #F1F0F0;
-    margin: 20px;
+.wrapper-form {
+    position: relative;
+    margin: 50px;
+    background-color: burlywood;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.wrapper-info div {
-    display: flex;
     align-items: center;
-    margin: 10px;
 }
 
-#logo {
-    width: 1.5rem;
-    margin: 7px;
-}
-
-.teknologi {
-    grid-area: teknologi;
+.wrapper-form h1 {
     margin: 20px;
+}
+
+form {
+    background-color: cadetblue;
     display: flex;
+    flex-direction: column;
+    width: 70%;
     
 }
 
-
-.wrapper-info2{
+label {
     margin: 10px;
 }
 
+input {
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+    height: 40px;
+    margin: 10px;
+    /* width: 100%; */
+}
 
-.wrapper-item {
-    
-    margin-top: 20px;
+.wrapper-date {
     display: flex;
 }
 
-.item{
-    margin-right: 20px;
+.date-form1 {
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: rgb(201, 147, 76);
+}
+.date-form2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: antiquewhite;
+}
+
+textarea {
+    border-radius: 10px;
+}
+.radio-button {
     display: flex;
     align-items: center;
-
-}
-
-article {
-    grid-area: artikel;
-    line-height: 1.5;
-
-}
-p {
-    text-indent: 70px;
-    text-align: justify;
+    background-color: aliceblue;
 }

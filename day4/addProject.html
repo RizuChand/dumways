@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/addMyproject.css">
+    <title>add Project</title>
+</head>
+<body>
+    <nav>
+        <img src="./img/logo.png" alt="logo">
+        <ul>
+            <li>Home</li>
+            <li>My Project</li>
+        </ul>
+          <a href="./contact.html">Contact</a>     
+    </nav> 
+    <div class="container">
+        <div class="wrapper-form">
+            <h1>Add My Project</h1>
+            <form action="">
+                <label for="">Project Name</label>
+                <input type="text"> 
+
+                <div class="wrapper-date">
+                    <div class="date-form1">
+                        <label for="">Start Date</label>
+                        <input type="text">
+                    </div>
+                    <div class="date-form2">
+                        <label for="">End Date</label>
+                        <input type="text">
+                    </div>
+
+                </div>
+                <label for="">Description</label>
+                <textarea name="description" id="" cols="20" rows="5"></textarea>
+
+                <label for="">Technologi</label>
+                <div class="radio-button">
+                    <input type="radio" id="nodejs" value="nodejs">
+                    <label for="nodejs">Node JS</label>
+                    <input type="radio" id="nextjs" value="nextjs">
+                    <label for="nodejs">Next JS</label>
+                    <input type="radio" id="reactjs" value="reactjs">
+                    <label for="nodejs">React JS</label>
+                    <input type="radio" id="typescript" value="typescript">
+                    <label for="nodejs">Typescript</label> 
+                </div>
+                <label for="">Upload File</label>
+                <input type="file" name="file" id="file">
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
