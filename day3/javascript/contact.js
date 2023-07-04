@@ -11,12 +11,18 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     
+    const valueName = inputName.value
+    const valueEmail = email.value
+    const valueNumber = number.value
+    const valueRb = radioButton.value
+    const valueMessage = message.value
+
     let dataStatic = {
-        inputName,
-        email,
-        number,
-        radioButton,
-        message
+        valueName,
+        valueEmail,
+        valueNumber,
+        valueRb,
+        valueMessage
     }
 
 
@@ -27,6 +33,6 @@ form.addEventListener("submit", (e)=>{
 
     let anchor = document.createElement("a");
 
-    anchor.href = `mailto:${emailReceiver}?subject=${radioButton}&body=konnichiwa hajimimashite ${inputName},\n${message}`;
+    anchor.href = `mailto:${emailReceiver}?subject=${valueRb}&body=konnichiwa hajimimashite ${valueName},\n${valueMessage}`;
     anchor.click();
 })
