@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/addMyproject.css">
+    <link rel="stylesheet" href="./css/project.css">
     <title>add Project</title>
 </head>
 <body>
@@ -18,43 +19,71 @@
     <div class="container">
         <div class="wrapper-form">
             <h1>Add My Project</h1>
-            <form action="">
+
+            <form id="form">
                 <label for="">Project Name</label>
-                <input type="text"> 
+                <input type="text" id="project-name"> 
 
                 <div class="wrapper-date">
+                    
                     <div class="date-form1">
                         <label for="">Start Date</label>
-                        <input type="text">
+                        <input type="text" id="start-date">
                     </div>
                     <div class="date-form2">
                         <label for="">End Date</label>
-                        <input type="text">
+                        <input type="text" id="end-date">
                     </div>
 
                 </div>
-                <label for="">Description</label>
-                <textarea name="description" id="" cols="20" rows="5"></textarea>
+
+                <div class="description">
+                    <label for="">Description</label>
+                    <textarea name="description" id="description" cols="20" rows="5"></textarea>
+
+                </div>
 
                 <label for="">Technologi</label>
                 <div class="radio-button">
-                    <input type="radio" id="nodejs" value="nodejs">
                     <label for="nodejs">Node JS</label>
-                    <input type="radio" id="nextjs" value="nextjs">
+                    <input type="checkbox" id="nodejs" value="nodejs">
                     <label for="nodejs">Next JS</label>
-                    <input type="radio" id="reactjs" value="reactjs">
+                    <input type="checkbox" id="nextjs" value="nextjs">
                     <label for="nodejs">React JS</label>
-                    <input type="radio" id="typescript" value="typescript">
+                    <input type="checkbox" id="reactjs" value="reactjs">
                     <label for="nodejs">Typescript</label> 
+                    <input type="checkbox" id="typescript" value="typescript">
                 </div>
-                <label for="">Upload File</label>
-                <input type="file" name="file" id="file">
+                <p>Upload Image</p>
+                <div class="upload-images">
+                    <label for="input-blog-image">
+                        <p>Choose</p>
+                    </label>
+                    <input type="file" name="input-blog-image" id="input-blog-image" hidden>
+                </div>
 
-                <button type="submit">Submit</button>
+                <button class="btn-submit" type="submit">Submit</button>
             </form>
 
         </div>
 
     </div>
+
+
+    <div class="myproject-container">
+        <h1>My Project</h1>
+        <div class="wrapper-myproject">
+            <div class="item-card">
+                <img src="" alt="">
+                <h4>haiiiii</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore corporis iure nostrum quos facere delectus laborum, sequi quisquam dolores.</p>
+                <div class="checkbox-item">
+                    <img src="" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./javascript/addProject.js"></script>
 </body>
 </html>
