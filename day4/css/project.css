@@ -1,5 +1,5 @@
 .myproject-container {
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(192, 221, 221);
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 .myproject-container h1 {
-    margin: 50px;
+    margin-top: 30px;
 }
 .wrapper-myproject {
     display: grid;
@@ -15,8 +15,9 @@
     grid-template-rows: 1fr 1fr;
     margin: 20px;
     background-color: tomato;
-    height: 90%;
-    width: 90%;
+    height: 130%;
+    width: 80%;
+    padding: 50px;
 }
 
 .item-card {
@@ -27,5 +28,33 @@
     border-radius: 20px;
     background-color: aqua;
     margin: 10px;
+    
 
+}
+
+.item-card img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgb(124, 168, 2);
+}
+
+.wrapper-checkbox {
+    gap: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.checkbox-item img {
+    height: 40px;
+}
+
+.option {
+    margin: 10px;
+    display: flex;
+    background-color: beige;
 }
