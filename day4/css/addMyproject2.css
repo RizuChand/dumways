@@ -1,6 +1,6 @@
 .myproject-container {
-    height: 150vh;
-    background-color: rgb(192, 221, 221);
+    height: 130%;
+    background-color: rgb(234, 241, 241);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,12 +12,13 @@
 .wrapper-myproject {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 20px;
-    background-color: tomato;
-    height: 130%;
+    height: 120%;
     width: 80%;
     padding: 50px;
+    list-style: none;
+    
 }
 
 .item-card {
@@ -26,9 +27,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: aqua;
+    background-color: rgb(131, 189, 236);
     margin: 10px;
-    
+    border: 1px solid lightblue;
 
 }
 
@@ -40,8 +41,8 @@
 
 .text {
     text-align: center;
+    margin-top: 10px;
     margin-bottom: 20px;
-    background-color: rgb(124, 168, 2);
 }
 
 .wrapper-checkbox {
@@ -49,12 +50,29 @@
     display: flex;
     margin-bottom: 10px;
 }
+.checkbox-item {
+    display: flex;
+    justify-content: center;
+}
 .checkbox-item img {
     height: 40px;
+    margin: 5px;;
 }
 
 .option {
-    margin: 10px;
     display: flex;
-    background-color: beige;
+    margin: 10px;
+    justify-content: center;
+    width: 90%;
+   
+}
+
+.option button {
+    margin-right:20px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-style: none;
 }
