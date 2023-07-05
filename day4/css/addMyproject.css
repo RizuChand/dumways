@@ -33,8 +33,14 @@ nav ul li {
     align-items: center;
     list-style: none;
     margin: 10px;
-     
+    color: black;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 
 nav ul li:first-child {
     font-weight: bold;
@@ -46,7 +52,7 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-nav a {
+nav .btn-contact {
     padding: 8px;
    
     border-radius: 7px;
